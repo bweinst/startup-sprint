@@ -27,8 +27,7 @@ class App < Sinatra::Base
   end
 
   get '/rainbow' do
-    @error = params['error']
-    
+
     erb :rainbow
   end
 
