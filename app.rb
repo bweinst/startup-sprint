@@ -26,6 +26,12 @@ class App < Sinatra::Base
     erb :reddit
   end
 
+  get '/rainbow' do
+    @error = params['error']
+    
+    erb :rainbow
+  end
+
   get '/schedule' do
     @today = [
       ['7:00am', 'Wake up'],
